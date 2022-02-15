@@ -7,6 +7,7 @@
   --cor-secundaria-1: #db2777;
   --cor-secundaria-2: #fb7185;
   --cor-fonte: #000;
+  --cor-fonte-fraca: #444;
   --cor-fonte-alt: #fff;
   --bg: #f0f9ff;
   --bg-card: #fff;
@@ -266,7 +267,7 @@ section h2 {
 
 .projetos .card .conteudo p {
   font-size: 0.9rem;
-  color: #444;
+  color: var(--cor-fonte-fraca);
 }
 
 .projetos .card h3 {
@@ -292,4 +293,31 @@ section h2 {
 
 .card .acoes button:hover {
   color: var(--cor-secundaria-1);
+}
+
+.anuncios .card {
+  flex-direction: column;
+  padding: 8px 32px;
+}
+
+.anuncios .card > div {
+  padding: 24px 0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.anuncios .card > div:last-child {
+  border-bottom: none;
+}
+
+.anuncios h4 {
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.anuncios p {
+  font-size: 0.9rem;
+  color: var(--cor-fonte-fraca);
 }
