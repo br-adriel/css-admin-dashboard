@@ -352,3 +352,17 @@ section h2 {
   align-self: start;
   font-size: 0.9rem;
 }
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
