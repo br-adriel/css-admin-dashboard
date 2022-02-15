@@ -152,7 +152,6 @@ header .saudacao {
 aside {
   background: var(--cor-primaria);
   color: var(--cor-fonte-alt);
-  box-shadow: 1px 0 5px var(--sombra);
   grid-column: 1 / 2;
   grid-row: 1 / span 3;
   display: flex;
@@ -177,12 +176,12 @@ aside .logo i {
 aside .menu {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
   margin-left: 32px;
 }
 
 .menu li a {
-  padding: 6px;
+  padding: 8px;
 }
 
 aside a {
@@ -197,10 +196,13 @@ aside a:hover {
   color: #eee;
 }
 
-aside .menu .selecionado * {
+aside .menu .selecionado {
   background-color: var(--bg);
-  color: var(--cor-fonte);
   border-radius: 4px 0 0 4px;
+}
+
+aside .menu .selecionado * {
+  color: var(--cor-fonte);
 }
 
 header,
