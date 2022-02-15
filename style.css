@@ -54,14 +54,14 @@ aside {
 aside .logo {
   display: flex;
   justify-content: center;
-  font-size: min(2rem, 44px);
+  font-size: min(1.5rem, 44px);
   gap: 8px;
   align-items: center;
   padding: 8px;
 }
 
 aside .logo i {
-  font-size: calc(min(2rem, 44px) + 12px);
+  font-size: calc(min(1.5rem, 44px) + 12px);
 }
 
 aside .menu {
