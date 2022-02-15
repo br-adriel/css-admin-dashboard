@@ -220,7 +220,7 @@ main {
   display: grid;
   padding: 16px;
   grid-template: auto auto / 3fr 1fr;
-  gap: 16px;
+  gap: 24px;
 }
 
 section {
