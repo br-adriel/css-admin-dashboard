@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+:root {
+  font-size: 16px;
+  --cor-primaria: #06b6d4;
+  --cor-secundaria-1: #db2777;
+  --cor-secundaria-2: #f59e0b;
+  --cor-fonte: #000;
+  --cor-fonte-alt: #fff;
+  --bg: #f0f9ff;
+  --bg-card: #fff;
+  --sombra: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+body {
+  background: var(--bg);
+}
+
+aside {
+  background: var(--cor-primaria);
+  color: var(--cor-fonte-alt);
+  box-shadow: 1px 0 5px var(--sombra);
+}
+
+header {
+  box-shadow: 0 2px 4px var(--sombra);
+}
+
+.card,
+.em-alta > div {
+  background: var(--bg-card);
+  box-shadow: 1px 1px 4px var(--sombra);
+}
