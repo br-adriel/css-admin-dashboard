@@ -24,14 +24,73 @@ body {
   background: var(--bg);
 }
 
-aside {
-  background: var(--cor-primaria);
-  color: var(--cor-fonte-alt);
-  box-shadow: 1px 0 5px var(--sombra);
+#content {
+  display: grid;
+  grid-template: auto / 1fr 4fr;
+}
+
+ul,
+li {
+  list-style: none;
+  list-style-type: none;
 }
 
 header {
   box-shadow: 0 2px 4px var(--sombra);
+}
+
+aside {
+  background: var(--cor-primaria);
+  color: var(--cor-fonte-alt);
+  box-shadow: 1px 0 5px var(--sombra);
+  grid-column: 1 / 2;
+  grid-row: 1 / span 3;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px 0;
+}
+
+aside .logo {
+  display: flex;
+  justify-content: center;
+  font-size: min(2rem, 44px);
+  gap: 8px;
+  align-items: center;
+  padding: 8px;
+}
+
+aside .logo i {
+  font-size: calc(min(2rem, 44px) + 12px);
+}
+
+aside .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 32px;
+}
+
+.menu li a {
+  padding: 6px;
+}
+
+aside a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+aside a:hover {
+  color: #eee;
+}
+
+aside .menu .selecionado * {
+  background-color: var(--bg);
+  color: var(--cor-fonte);
+  border-radius: 4px 0 0 4px;
 }
 
 .card,
