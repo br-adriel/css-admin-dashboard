@@ -5,7 +5,7 @@
   font-size: 16px;
   --cor-primaria: #06b6d4;
   --cor-secundaria-1: #db2777;
-  --cor-secundaria-2: #f59e0b;
+  --cor-secundaria-2: #fb7185;
   --cor-fonte: #000;
   --cor-fonte-alt: #fff;
   --bg: #f0f9ff;
@@ -27,6 +27,7 @@ body {
 #content {
   display: grid;
   grid-template: auto / 1fr 4fr;
+  min-height: 100vh;
 }
 
 ul,
@@ -212,4 +213,83 @@ header,
   box-shadow: 1px 1px 4px var(--sombra);
   background: var(--bg-card);
   border-radius: 4px;
+}
+
+main {
+  display: grid;
+  padding: 16px;
+  grid-template: auto auto / 3fr 1fr;
+  gap: 16px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+section h2 {
+  font-weight: 400;
+}
+
+.projetos {
+  grid-row: span 2;
+}
+
+.projetos > div {
+  display: grid;
+  gap: 16px;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.projetos .card {
+  display: grid;
+  grid-template-columns: 6px 1fr;
+}
+
+.projetos .card .barra {
+  background: linear-gradient(
+    135deg,
+    var(--cor-secundaria-1),
+    var(--cor-secundaria-2)
+  );
+  border-radius: 4px 0 0 4px;
+}
+
+.projetos .card .conteudo {
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.projetos .card .conteudo p {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.projetos .card h3 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.projetos .card .acoes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  margin-top: auto;
+}
+
+.projetos .card .acoes button {
+  background: var(--bg-card);
+  border: none;
+  color: var(--cor-primaria);
+  font-size: 1.2rem;
+  padding: 8px;
+}
+
+.card .acoes button:hover {
+  color: var(--cor-secundaria-1);
 }
